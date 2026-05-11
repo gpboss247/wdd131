@@ -1,0 +1,224 @@
+/* CSS Variables */
+:root {
+    --primary-color: #8b3a2e;
+    --secondary-color: #d97706;
+    --accent-color: #f4b183;
+    --light-color: #fff7f0;
+    --dark-color: #2f1b12;
+    --white: #ffffff;
+    --text-color: #333333;
+
+    --main-font: 'Roboto', sans-serif;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: var(--main-font);
+    font-weight: 400;
+    background-color: var(--light-color);
+    color: var(--text-color);
+    line-height: 1.7;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Course Title */
+#course-title {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 1.2rem;
+    letter-spacing: 1px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    background-color: rgba(0, 0, 0, 0.12);
+    padding: 0.8rem;
+}
+
+/* Navigation Links */
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+
+    padding: 0.7rem 1.2rem;
+    border-radius: 8px;
+
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+nav a:hover {
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+    transform: translateY(-2px);
+}
+
+/* Main Layout */
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 1rem;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
+
+/* Main Heading */
+main h1 {
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    font-size: 3rem;
+    font-weight: 100;
+
+    color: var(--primary-color);
+
+    margin-bottom: 1rem;
+}
+
+/* Cards */
+.card {
+    background-color: var(--white);
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.3s ease;
+}
+
+/* Card Hover */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Card Headings */
+.card h2 {
+    background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+
+    color: var(--white);
+
+    text-align: center;
+
+    padding: 1rem;
+
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+/* Card Content */
+.card p {
+    padding: 1rem 1.5rem;
+}
+
+/* Images */
+.card img {
+    display: block;
+
+    width: 100%;
+    max-width: 180px;
+
+    margin: 1rem auto;
+
+    border-radius: 10px;
+}
+
+/* Sub Heading */
+.card h3 {
+    text-align: center;
+
+    color: var(--primary-color);
+
+    font-size: 1.2rem;
+    font-weight: 400;
+
+    margin-top: 1rem;
+}
+
+/* Resource List */
+.card ul {
+    padding: 1.5rem 2rem;
+}
+
+.card ul li {
+    margin-bottom: 0.9rem;
+}
+
+/* Resource Links */
+.card ul li a {
+    color: var(--secondary-color);
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+.card ul li a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+
+    color: var(--white);
+
+    text-align: center;
+
+    padding: 1.5rem;
+
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.4rem 0;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    main h1 {
+        font-size: 2.2rem;
+    }
+}
