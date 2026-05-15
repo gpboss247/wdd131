@@ -1,12 +1,13 @@
 /* CSS Variables */
 :root {
-    --primary-color: #8b3a2e;
-    --secondary-color: #d97706;
-    --accent-color: #f4b183;
-    --light-color: #fff7f0;
-    --dark-color: #2f1b12;
+    --primary-color: #7a2e1f;
+    --secondary-color: #a84b10;
+    --accent-color: #e89b5c;
+    --light-color: #fff8f2;
+    --dark-color: #1f120d;
     --white: #ffffff;
-    --text-color: #333333;
+    --text-color: #222222;
+    --link-color: #8a3d0c;
 
     --main-font: 'Roboto', sans-serif;
 }
@@ -16,6 +17,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+header,
+footer,
+.card h2 {
+    color: #ffffff;
 }
 
 /* Body */
@@ -52,7 +59,7 @@ nav {
     gap: 1rem;
     flex-wrap: wrap;
 
-    background-color: rgba(0, 0, 0, 0.12);
+    background-color: rgba(0, 0, 0, 0.35);
     padding: 0.8rem;
 }
 
@@ -163,12 +170,14 @@ main h1 {
 }
 
 /* Resource List */
-.card ul {
-    padding: 1.5rem 2rem;
+.card ul li a {
+    color: var(--link-color);
+    font-weight: 400;
+    text-decoration: underline;
 }
 
-.card ul li {
-    margin-bottom: 0.9rem;
+.card ul li a:hover {
+    color: var(--dark-color);
 }
 
 /* Resource Links */
