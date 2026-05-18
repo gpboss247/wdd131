@@ -1,11 +1,11 @@
 @media screen and (min-width: 700px) {
 
-    /* Hide hamburger on desktop */
+    
     #menu {
         display: none;
     }
 
-    /* Header: side by side layout */
+
     header {
         display: flex;
         justify-content: space-between;
@@ -13,7 +13,7 @@
         padding: 1rem 2rem;
     }
 
-    /* Nav: always visible, horizontal row */
+    
     .navigation {
         position: static;
         flex-direction: row;
@@ -35,7 +35,6 @@
         color: #4b006e;
     }
 
-    /* Gallery: 3-column grid on desktop */
     .gallery {
         grid-template-columns: repeat(3, 1fr);
         gap: 1.25rem;
