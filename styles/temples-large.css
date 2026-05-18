@@ -1,0 +1,51 @@
+@media screen and (min-width: 700px) {
+
+    /* Hide hamburger on desktop */
+    #menu {
+        display: none;
+    }
+
+    /* Header: side by side layout */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    /* Nav: always visible, horizontal row */
+    .navigation {
+        position: static;
+        flex-direction: row;
+        width: auto;
+        gap: 0.25rem;
+        background-color: transparent;
+    }
+
+    .navigation a {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        border-top: none;
+        border-radius: 4px;
+        font-size: 0.95rem;
+    }
+
+    .navigation a:hover {
+        background-color: white;
+        color: #4b006e;
+    }
+
+    /* Gallery: 3-column grid on desktop */
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.25rem;
+    }
+
+    figure img {
+        height: 180px;
+    }
+
+    main h1 {
+        font-size: 1.8rem;
+    }
+}
