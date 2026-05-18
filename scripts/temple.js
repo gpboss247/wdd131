@@ -1,5 +1,5 @@
 const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
+const navigation = document.querySelector('nav');
 
 hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
@@ -9,4 +9,4 @@ hamButton.addEventListener('click', () => {
 document.getElementById('currentyear').textContent = new Date().getFullYear();
 
 document.getElementById('lastModified').textContent =
-    `Last Modified: ${document.lastModified}`;     
+    `Last Modified: ${document.lastModified}`;

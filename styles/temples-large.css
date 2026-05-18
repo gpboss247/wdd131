@@ -1,11 +1,11 @@
 @media screen and (min-width: 700px) {
 
-    
+    /* Hide hamburger on desktop */
     #menu {
         display: none;
     }
 
-
+    /* Header: side by side layout */
     header {
         display: flex;
         justify-content: space-between;
@@ -13,8 +13,8 @@
         padding: 1rem 2rem;
     }
 
-    
-    .navigation {
+    /* Nav: always visible, horizontal row */
+    nav {
         position: static;
         flex-direction: row;
         width: auto;
@@ -22,7 +22,7 @@
         background-color: transparent;
     }
 
-    .navigation a {
+    nav a {
         display: inline-block;
         padding: 0.5rem 1rem;
         border-top: none;
@@ -30,11 +30,12 @@
         font-size: 0.95rem;
     }
 
-    .navigation a:hover {
+    nav a:hover {
         background-color: white;
         color: #4b006e;
     }
 
+    /* Gallery: 3-column grid on desktop */
     .gallery {
         grid-template-columns: repeat(3, 1fr);
         gap: 1.25rem;
