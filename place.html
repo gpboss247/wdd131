@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Nigeria – The Giant of Africa</title>
-    <meta name="description" content="Discover Nigeria, the Giant of Africa — a vibrant nation of rich culture, diverse landscapes, and warm welcoming people in West Africa.">
+    <meta name="description" content="Discover Nigeria, the Giant of Africa, a vibrant nation of rich culture, diverse landscapes, and warm welcoming people in West Africa.">
     <meta name="author" content="Onaimor Godspower">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="week03/styles/place.css">
 
-    <script src="scripts/place.js" defer></script>
+    <script src="week03/scripts/place.js" defer></script>
 </head>
 
 <body>
@@ -31,17 +31,17 @@
             <picture>
                 <source
                     media="(min-width: 700px)"
-                    srcset="images/nigeria-large.webp"
+                    srcset="week03/images/nigeria-large.webp"
                     type="image/webp">
                 <img
-                    src="images/nigeria-small.webp"
-                    srcset="images/nigeria-small.webp 400w, images/nigeria-large.webp 900w"
+                    src="week03/images/nigeria-small.webp"
+                    srcset="week03/images/nigeria-small.webp 400w, week03/images/nigeria-large.webp 900w"
                     sizes="(min-width: 700px) 900px, 100vw"
                     alt="Beautiful landscape of Nigeria"
                     class="hero-img">
             </picture>
 
-            
+            <!-- DATA CARD — top left overlay -->
             <div class="card data-card">
                 <h2>Data</h2>
                 <table>
@@ -80,11 +80,11 @@
                 </table>
             </div>
 
-            
+            <!-- WEATHER CARD — bottom right overlay -->
             <div class="card weather-card">
                 <h2 class="weather-heading">Weather</h2>
-                
-                <img src="images/sunny.svg" alt="Sunny weather icon" class="weather-icon-svg">
+                <!-- SVG icon: mobile only -->
+                <img src="week03/images/sunny.svg" alt="Sunny weather icon" class="weather-icon-svg">
                 <div class="weather-stats">
                     <p><span class="label">Temperature:</span> 32 °C</p>
                     <p><span class="label">Conditions:</span> Sunny &amp; Humid</p>
