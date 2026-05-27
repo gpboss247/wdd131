@@ -1,20 +1,20 @@
-/* CSS VARIABLES */
+
 :root {
     --green-main:   #008751;
     --green-dark:   #005f3b;
-    --green-light:  #e6f4ee;
     --white:        #ffffff;
+    --off-white:    #f8faf9;
     --text-dark:    #1a2a1f;
     --text-mid:     #2d4a38;
     --accent-gold:  #c8920a;
-    --card-bg:      rgba(255, 255, 255, 0.92);
-    --shadow:       0 4px 18px rgba(0, 0, 0, 0.28);
+    --card-bg:      #ece9e9ed;
+    --shadow:       #00000047;
     --radius:       6px;
     --font-display: 'Playfair Display', Georgia, serif;
     --font-body:    'Source Sans 3', sans-serif;
 }
 
-/* RESET & BASE */
+
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -23,11 +23,11 @@
 
 body {
     font-family: var(--font-body);
-    background-color: #f0f0f0;
+    background-color: var(--off-white);
     color: var(--text-dark);
 }
 
-/* HEADER */
+
 header {
     background-color: var(--green-main);
     color: var(--white);
@@ -43,11 +43,11 @@ header h1 {
     letter-spacing: 1px;
 }
 
-/* HERO — position:relative so cards can overlay */
+
 .hero {
     position: relative;
     width: 100%;
-    background-color: #000;
+    background-color: var(--text-dark);
 }
 
 .hero-img {
@@ -58,11 +58,11 @@ header h1 {
     opacity: 0.88;
 }
 
-/* CARDS  shared base styles */
+
 .card {
     background-color: var(--card-bg);
     border-radius: var(--radius);
-    box-shadow: var(--shadow);
+    box-shadow: 0 4px 18px var(--shadow);
     padding: 1rem 1.25rem;
 }
 
@@ -78,7 +78,6 @@ header h1 {
     letter-spacing: 0.5px;
 }
 
-/* CARD mobile: below image / desktop: top left overlay*/
 .data-card {
     margin: 1rem;
 }
@@ -104,12 +103,11 @@ header h1 {
     color: var(--text-dark);
 }
 
-/* CARD mobile: below data card / desktop: bottom right*/
+
 .weather-card {
     margin: 0 1rem 1rem;
 }
 
-/* SVG icon visible on mobile */
 .weather-icon-svg {
     width: 48px;
     height: 48px;
@@ -133,13 +131,13 @@ header h1 {
     color: var(--green-dark);
 }
 
-/* Weather heading pseudo-element  hidden mobile, shown desktop */
+/* Weather heading pseudo-element — hidden mobile */
 .weather-heading::after {
     content: '';
     display: none;
 }
 
-/* FOOTER */
+
 footer {
     background-color: var(--green-main);
     color: var(--white);
@@ -150,44 +148,41 @@ footer {
     border-top: 4px solid var(--accent-gold);
 }
 
-/* MEDIA QUERY  wider screens (min-width: 700px) */
+
 @media screen and (min-width: 700px) {
 
     header h1 {
         font-size: 3rem;
     }
 
-    /* Taller hero on desktop */
     .hero-img {
         height: 520px;
     }
 
-    /* DATA CARD: absolute positioned top left over the image */
+    /* DATA CARD: absolute top-left over image */
     .data-card {
         position: absolute;
         top: 0;
         left: 0;
         margin: 1.5rem;
         width: 230px;
-        background-color: rgba(255, 255, 255, 0.93);
     }
 
-    /* WEATHER CARD: absolute positioned bottom right over the image */
+    /* WEATHER CARD: absolute bottom-right over image */
     .weather-card {
         position: absolute;
         bottom: 0;
         right: 0;
         margin: 1.5rem;
         width: 210px;
-        background-color: rgba(255, 255, 255, 0.93);
     }
 
-    /* Hide SVG icon on desktop use pseudo-element instead */
+    /* Hide SVG on desktop */
     .weather-icon-svg {
         display: none;
     }
 
-    
+    /* Show emoticon pseudo-element after Weather heading */
     .weather-heading::after {
         content: ' ⛅';
         display: inline;
