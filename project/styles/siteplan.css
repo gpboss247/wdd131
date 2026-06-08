@@ -1,6 +1,4 @@
 /* Fegor Homes Ltd - Site Plan Stylesheet */
-/* Google Fonts Import */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Raleway:wght@300;400;500;600&family=Lato:wght@300;400;700&display=swap');
 
 /* ===== CSS Custom Properties ===== */
 :root {
@@ -13,13 +11,11 @@
   --color-text: #2C2C2C;
   --color-text-light: #5A4A4A;
   --color-border: #E8D8C8;
-  --color-gold-tint: #FFF4E0;
 
   --font-heading: 'Playfair Display', Georgia, serif;
   --font-subheading: 'Raleway', sans-serif;
   --font-body: 'Lato', sans-serif;
 
-  --shadow-soft: 0 4px 20px rgba(107, 20, 20, 0.08);
   --shadow-card: 0 2px 12px rgba(107, 20, 20, 0.12);
   --radius: 8px;
   --max-width: 960px;
@@ -123,7 +119,7 @@ main {
   padding: 2rem 1.5rem 4rem;
 }
 
-/* ===== Section Shared Styles ===== */
+/* ===== Sections ===== */
 section {
   background-color: var(--color-white);
   border-radius: var(--radius);
@@ -138,7 +134,6 @@ section:nth-child(even) {
   background-color: var(--color-bg-section);
 }
 
-/* ===== Section Headings ===== */
 h2 {
   font-family: var(--font-heading);
   color: var(--color-primary);
@@ -192,7 +187,7 @@ li {
   font-size: 0.97rem;
 }
 
-/* ===== Site Name Section ===== */
+/* ===== Site Name ===== */
 .domain-tag {
   display: inline-block;
   background-color: var(--color-primary);
@@ -227,8 +222,16 @@ li {
   height: 70px;
   border-radius: var(--radius);
   border: 2px solid var(--color-border);
-  box-shadow: var(--shadow-soft);
+  box-shadow: 0 4px 20px rgba(107, 20, 20, 0.08);
 }
+
+.swatch-crimson  { background-color: #6B1414; }
+.swatch-orange   { background-color: #F5831F; }
+.swatch-dark     { background-color: #2C1A1A; }
+.swatch-offwhite { background-color: #FAF7F2; }
+.swatch-cream    { background-color: #FFF4E6; }
+.swatch-charcoal { background-color: #2C2C2C; }
+.swatch-white    { background-color: #FFFFFF; }
 
 .swatch-label {
   font-family: var(--font-subheading);
@@ -256,7 +259,7 @@ li {
   max-width: 110px;
 }
 
-/* ===== Typography Section ===== */
+/* ===== Typography ===== */
 .font-showcase {
   display: flex;
   flex-direction: column;
@@ -311,7 +314,27 @@ li {
   line-height: 1.7;
 }
 
-/* ===== Wireframe Section ===== */
+/* ===== Scenarios ===== */
+.scenario-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.scenario-list li {
+  background: var(--color-bg);
+  border-left: 4px solid var(--color-accent);
+  padding: 0.85rem 1rem;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  font-style: italic;
+  color: var(--color-dark);
+  font-size: 0.95rem;
+}
+
+/* ===== Wireframes Container ===== */
 .wireframes-container {
   display: flex;
   flex-wrap: wrap;
@@ -336,35 +359,35 @@ li {
   color: var(--color-primary);
 }
 
-/* Mobile Wireframe */
+/* ===== Mobile Wireframe ===== */
 .wf-mobile {
   width: 180px;
   border: 2px solid var(--color-primary);
   border-radius: 12px;
   overflow: hidden;
-  background: #fff;
+  background: var(--color-white);
 }
 
-/* Desktop Wireframe */
+/* ===== Desktop Wireframe ===== */
 .wf-desktop {
   width: 460px;
   border: 2px solid var(--color-primary);
   border-radius: 8px;
   overflow: hidden;
-  background: #fff;
+  background: var(--color-white);
 }
 
+/* ===== Wireframe Blocks ===== */
 .wf-block {
   background-color: var(--color-primary);
   color: var(--color-white);
   font-family: var(--font-subheading);
-  font-size: 0.6rem;
+  font-size: 0.55rem;
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  padding: 0.5rem;
-  margin: 0;
+  padding: 0.45rem 0.4rem;
 }
 
 .wf-block.accent {
@@ -384,6 +407,117 @@ li {
   border: 1px dashed var(--color-border);
 }
 
+/* Mobile wireframe specific blocks */
+.wf-header-block  { font-size: 0.55rem; padding: 0.6rem 0.4rem; }
+.wf-nav-block     { font-size: 0.5rem; padding: 0.3rem; background-color: var(--color-accent); }
+.wf-search-block  { font-size: 0.5rem; padding: 0.4rem; }
+.wf-card-block    { font-size: 0.5rem; padding: 0.5rem; }
+.wf-section-title-block { font-size: 0.5rem; padding: 0.4rem; }
+.wf-service-block { font-size: 0.5rem; padding: 0.4rem; }
+.wf-cta-block     { font-size: 0.5rem; padding: 0.5rem; }
+.wf-footer-block  { font-size: 0.45rem; padding: 0.4rem; background-color: var(--color-dark); }
+
+/* Mobile hero */
+.wf-hero-mobile {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-dark));
+  padding: 1rem 0.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.wf-hero-bar {
+  background: rgba(255, 255, 255, 0.25);
+  height: 8px;
+  border-radius: 2px;
+}
+
+.wf-hero-bar-lg   { width: 80%; }
+.wf-hero-bar-md   { width: 60%; background: rgba(255, 255, 255, 0.15); height: 6px; }
+
+.wf-hero-cta-mobile {
+  background-color: var(--color-accent);
+  height: 12px;
+  width: 50%;
+  border-radius: 3px;
+  margin-top: 0.2rem;
+}
+
+/* Desktop nav bar */
+.wf-nav-desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-dark);
+  padding: 0.4rem 0.6rem;
+}
+
+.wf-logo-bar {
+  background: rgba(255, 255, 255, 0.4);
+  height: 10px;
+  width: 80px;
+  border-radius: 2px;
+}
+
+.wf-nav-links {
+  display: flex;
+  gap: 4px;
+}
+
+.wf-nav-item {
+  background: rgba(245, 131, 31, 0.6);
+  height: 8px;
+  width: 30px;
+  border-radius: 2px;
+}
+
+.wf-nav-active {
+  background-color: var(--color-accent);
+  opacity: 1;
+}
+
+/* Desktop hero */
+.wf-hero-desktop {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-dark));
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.wf-hero-text {
+  background: rgba(255, 255, 255, 0.3);
+  height: 10px;
+  border-radius: 2px;
+  width: 70%;
+}
+
+.wf-hero-text-sm {
+  width: 50%;
+  height: 7px;
+}
+
+.wf-hero-btn {
+  background-color: var(--color-accent);
+  height: 14px;
+  width: 30%;
+  border-radius: 4px;
+  margin-top: 0.25rem;
+}
+
+/* Desktop wireframe blocks */
+.wf-search-desktop  { font-size: 0.55rem; padding: 0.5rem; }
+.wf-section-heading { font-size: 0.55rem; padding: 0.4rem; }
+.wf-grid-card       { font-size: 0.5rem; padding: 0.7rem 0.4rem; }
+.wf-grid-service    { font-size: 0.5rem; padding: 0.6rem 0.4rem; }
+.wf-testimonials    { font-size: 0.55rem; padding: 0.5rem; }
+.wf-cta-desktop     { font-size: 0.55rem; padding: 0.5rem; background-color: var(--color-primary); color: var(--color-white); }
+.wf-footer-col      { font-size: 0.5rem; padding: 0.5rem; background-color: var(--color-dark); }
+
+
 .wf-grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -400,76 +534,12 @@ li {
   border-top: 2px solid var(--color-border);
 }
 
-.wf-nav-desktop {
-  display: flex;
-  justify-content: space-between;
-  background-color: var(--color-dark);
-  padding: 0.4rem 0.6rem;
-}
-
-.wf-nav-item {
-  background: rgba(245, 131, 31, 0.6);
-  height: 8px;
-  border-radius: 2px;
-  flex: 1;
-  margin: 0 2px;
-}
-
-.wf-hero-desktop {
-  background: linear-gradient(135deg, var(--color-primary), var(--color-dark));
-  padding: 1.5rem 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.4rem;
-}
-
-.wf-hero-text {
-  background: rgba(255,255,255,0.3);
-  height: 10px;
-  border-radius: 2px;
-  width: 70%;
-}
-
-.wf-hero-text.sm {
-  width: 50%;
-  height: 7px;
-}
-
-.wf-hero-btn {
-  background-color: var(--color-accent);
-  height: 14px;
-  width: 30%;
-  border-radius: 4px;
-  margin-top: 0.25rem;
-}
-
 .wf-spacer {
   height: 6px;
   background: var(--color-bg);
 }
 
-/* ===== Scenarios ===== */
-.scenario-list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-top: 0.5rem;
-}
 
-.scenario-list li {
-  background: var(--color-bg);
-  border-left: 4px solid var(--color-accent);
-  padding: 0.85rem 1rem;
-  border-radius: 0 var(--radius) var(--radius) 0;
-  font-style: italic;
-  color: var(--color-dark);
-  font-size: 0.95rem;
-}
-
-/* ===== Footer ===== */
 footer {
   background-color: var(--color-dark);
   color: var(--color-bg);
@@ -488,6 +558,10 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+.footer-ref {
+  margin-top: 0.5rem;
 }
 
 /* ===== Responsive ===== */
