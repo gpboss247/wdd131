@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temple Album</title>
+    <meta name="description" content="A responsive Temple Album showcasing sacred LDS temples around the world, This Temple Album is for WDD 131 Dynamic Web Fundamentals.">
+    <meta name="author" content="Onaimor Godspower">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Mobile-first: base styles first, then large-screen overrides -->
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h2>Temple Album</h2>
+
+        <!-- Hamburger only visible on mobile -->
+        <button id="menu" aria-label="Toggle navigation menu"></button>
+
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+
+        <div class="gallery">
+            <figure>
+                <img src="images/salt_lake_temple1.jpg" alt="San Diego California Temple">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/salt_late_temple2.jpg" alt="Lagos Nigeria Temple">
+                <figcaption>Lagos Nigeria</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/salt_lake_temple3.jpg" alt="Salt Lake Utah Temple">
+                <figcaption>Salt Lake Utah</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/salt_lake_temple4.jpg" alt="Rome Italy Temple">
+                <figcaption>Rome Italy</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/salt_lake_temple5.jpg" alt="Accra Ghana Temple">
+                <figcaption>Accra Ghana</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/salt_lake_temple3.jpg" alt="Johannesburg South Africa Temple">
+                <figcaption>Johannesburg South Africa</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/salt_late_temple2.jpg" alt="Nairobi Kenya Temple">
+                <figcaption>Nairobi Kenya</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/salt_lake_temple4.jpg" alt="Tokyo Japan Temple">
+                <figcaption>Tokyo Japan</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/salt_lake_temple1.jpg" alt="London England Temple">
+                <figcaption>London England</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> 🌺 Onaimor Godspower 🌺 Nigeria
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>

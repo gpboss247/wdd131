@@ -1,0 +1,191 @@
+
+:root {
+    --green-main:   #008751;
+    --green-dark:   #005f3b;
+    --white:        #ffffff;
+    --off-white:    #f8faf9;
+    --text-dark:    #1a2a1f;
+    --text-mid:     #2d4a38;
+    --accent-gold:  #c8920a;
+    --card-bg:      #ece9e9ed;
+    --shadow:       #00000047;
+    --radius:       6px;
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body:    'Source Sans 3', sans-serif;
+}
+
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--off-white);
+    color: var(--text-dark);
+}
+
+
+header {
+    background-color: var(--green-main);
+    color: var(--white);
+    text-align: center;
+    padding: 1.2rem 1rem;
+    border-bottom: 5px solid var(--accent-gold);
+}
+
+header h1 {
+    font-family: var(--font-display);
+    font-size: 2.2rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+
+.hero {
+    position: relative;
+    width: 100%;
+    background-color: var(--text-dark);
+}
+
+.hero-img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    display: block;
+    opacity: 0.88;
+}
+
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: 0 4px 18px var(--shadow);
+    padding: 1rem 1.25rem;
+}
+
+.card h2 {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--green-main);
+    margin: -1rem -1.25rem 0.85rem;
+    padding: 0.45rem 1rem;
+    border-radius: var(--radius) var(--radius) 0 0;
+    letter-spacing: 0.5px;
+}
+
+.data-card {
+    margin: 1rem;
+}
+
+.data-card table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+}
+
+.data-card th {
+    text-align: right;
+    padding: 0.2rem 0.6rem 0.2rem 0;
+    color: var(--text-mid);
+    font-weight: 600;
+    white-space: nowrap;
+    width: 45%;
+}
+
+.data-card td {
+    text-align: left;
+    padding: 0.2rem 0;
+    color: var(--text-dark);
+}
+
+
+.weather-card {
+    margin: 0 1rem 1rem;
+}
+
+.weather-icon-svg {
+    width: 48px;
+    height: 48px;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.weather-stats p {
+    font-size: 0.88rem;
+    padding: 0.15rem 0;
+    color: var(--text-dark);
+}
+
+.label {
+    font-weight: 600;
+    color: var(--text-mid);
+}
+
+#wind-chill {
+    font-weight: 700;
+    color: var(--green-dark);
+}
+
+/* Weather heading pseudo-element — hidden mobile */
+.weather-heading::after {
+    content: '';
+    display: none;
+}
+
+
+footer {
+    background-color: var(--green-main);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.85rem;
+    line-height: 2;
+    border-top: 4px solid var(--accent-gold);
+}
+
+
+@media screen and (min-width: 700px) {
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    .hero-img {
+        height: 520px;
+    }
+
+    /* DATA CARD: absolute top-left over image */
+    .data-card {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 1.5rem;
+        width: 230px;
+    }
+
+    /* WEATHER CARD: absolute bottom-right over image */
+    .weather-card {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 1.5rem;
+        width: 210px;
+    }
+
+    /* Hide SVG on desktop */
+    .weather-icon-svg {
+        display: none;
+    }
+
+    /* Show emoticon pseudo-element after Weather heading */
+    .weather-heading::after {
+        content: ' ⛅';
+        display: inline;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temple Album – Filtered</title>
+    <meta name="description" content="A filtered and dynamically generated Temple Album showcasing sacred temples around the world, and specifically built for WDD 131 Week 04 assignment.">
+    <meta name="author" content="Onaimor Godspower">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h2>Temple Album</h2>
+
+        <button id="menu" aria-label="Toggle navigation menu"></button>
+
+        <nav>
+            <a href="#" id="home">Home</a>
+            <a href="#" id="old">Old</a>
+            <a href="#" id="new">New</a>
+            <a href="#" id="large">Large</a>
+            <a href="#" id="small">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 id="filter-heading">Home</h1>
+        <div class="gallery" id="gallery"></div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌺 Onaimor Godspower 🌺 Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nigeria – The Giant of Africa</title>
+    <meta name="description" content="Discover Nigeria, the Giant of Africa, a vibrant nation of rich culture, diverse landscapes, and warm welcoming people in West Africa.">
+    <meta name="author" content="Onaimor Godspower">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="week03/styles/place.css">
+
+    <script src="week03/scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+
+    <main>
+
+      
+        <section class="hero">
+
+            <picture>
+                
+                <source
+                    media="(min-width: 700px)"
+                    srcset="week03/images/nigeria-large.webp 900w"
+                    sizes="900px"
+                    type="image/webp">
+                <img
+                    src="week03/images/nigeria-small.webp"
+                    srcset="week03/images/nigeria-small.webp 400w, week03/images/nigeria-large.webp 900w"
+                    sizes="(min-width: 700px) 900px, 100vw"
+                    alt="Beautiful landscape of Nigeria"
+                    class="hero-img">
+            </picture>
+
+            
+            <div class="card data-card">
+                <h2>Data</h2>
+                <table>
+                    <tr>
+                        <th>Area:</th>
+                        <td>923,768 sq km</td>
+                    </tr>
+                    <tr>
+                        <th>Population:</th>
+                        <td>220,000,000</td>
+                    </tr>
+                    <tr>
+                        <th>Capital:</th>
+                        <td>Abuja</td>
+                    </tr>
+                    <tr>
+                        <th>Languages:</th>
+                        <td>English, Hausa, Yoruba, Igbo</td>
+                    </tr>
+                    <tr>
+                        <th>Currency:</th>
+                        <td>Nigerian Naira</td>
+                    </tr>
+                    <tr>
+                        <th>Time Zone:</th>
+                        <td>UTC+1</td>
+                    </tr>
+                    <tr>
+                        <th>Calling Code:</th>
+                        <td>+234</td>
+                    </tr>
+                    <tr>
+                        <th>Internet TLD:</th>
+                        <td>.ng</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="card weather-card">
+                <h2 class="weather-heading">Weather</h2>
+                <!-- SVG icon: mobile only -->
+                <img src="week03/images/sunny.svg" alt="Sunny weather icon" class="weather-icon-svg">
+                <div class="weather-stats">
+                    <p><span class="label">Temperature:</span> 32 °C</p>
+                    <p><span class="label">Conditions:</span> Sunny &amp; Humid</p>
+                    <p><span class="label">Wind:</span> 3.5 km/h</p>
+                    <p><span class="label">Wind Chill:</span> <span id="wind-chill">--</span></p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🌿 Onaimor Godspower 🌿 Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>

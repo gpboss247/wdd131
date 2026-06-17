@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lazy Load Gallery</title>
+    <meta name="description" content="A demonstration of lazy loading images with CSS fade-from-black animation for WDD 131 Week 04 activity.">
+    <meta name="author" content="Onaimor Godspower">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;600&family=Outfit:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/lazyload.css">
+
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h2>Visual Journey</h2>
+    </header>
+
+    <main>
+        <h1>Scroll to Reveal</h1>
+
+        <img
+            src="https://picsum.photos/seed/nigeria1/400/600"
+            alt="A scenic landscape view"
+            width="400"
+            height="600"
+            loading="lazy">
+
+        <img
+            src="https://picsum.photos/seed/nigeria2/400/650"
+            alt="A vibrant natural scene"
+            width="400"
+            height="650"
+            loading="lazy">
+
+        <img
+            src="https://picsum.photos/seed/nigeria3/400/600"
+            alt="A peaceful countryside scene"
+            width="400"
+            height="600"
+            loading="lazy">
+
+        <img
+            src="https://picsum.photos/seed/africa4/400/620"
+            alt="A beautiful outdoor scene"
+            width="400"
+            height="620"
+            loading="lazy">
+
+        <img
+            src="https://picsum.photos/seed/africa5/400/600"
+            alt="A stunning nature photograph"
+            width="400"
+            height="600"
+            loading="lazy">
+
+        <img
+            src="https://picsum.photos/seed/africa6/400/640"
+            alt="A captivating landscape photograph"
+            width="400"
+            height="640"
+            loading="lazy">
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌿 Onaimor Godspower 🌿 Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
