@@ -14,7 +14,7 @@ const properties = [
     beds: 5,
     baths: 6,
     sqft: 6200,
-    image: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=75&fm=webp&auto=compress",
     featured: true
   },
   {
@@ -27,7 +27,7 @@ const properties = [
     beds: 3,
     baths: 3,
     sqft: 2100,
-    image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=75&fm=webp&auto=compress",
     featured: true
   },
   {
@@ -40,7 +40,7 @@ const properties = [
     beds: 0,
     baths: 8,
     sqft: 12000,
-    image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=75&fm=webp&auto=compress",
     featured: true
   },
   {
@@ -53,7 +53,7 @@ const properties = [
     beds: 4,
     baths: 4,
     sqft: 3800,
-    image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=75&fm=webp&auto=compress",
     featured: false
   },
   {
@@ -66,7 +66,7 @@ const properties = [
     beds: 4,
     baths: 5,
     sqft: 5100,
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=75&fm=webp&auto=compress",
     featured: false
   },
   {
@@ -79,7 +79,7 @@ const properties = [
     beds: 2,
     baths: 2,
     sqft: 1400,
-    image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=75&fm=webp&auto=compress",
     featured: false
   },
   {
@@ -92,7 +92,7 @@ const properties = [
     beds: 6,
     baths: 8,
     sqft: 9500,
-    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=75&fm=webp&auto=compress",
     featured: false
   },
   {
@@ -105,7 +105,7 @@ const properties = [
     beds: 0,
     baths: 4,
     sqft: 7200,
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=75&fm=webp&auto=compress",
     featured: false
   },
   {
@@ -118,7 +118,7 @@ const properties = [
     beds: 3,
     baths: 3,
     sqft: 2600,
-    image: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800&q=75&fm=webp&auto=compress",
     featured: false
   }
 ];

@@ -52,7 +52,7 @@
 
 .mv-card-accent {
   border-top-color: var(--color-accent);
-  background-color: var(--color-white);
+  background-color: var(--color-primary);
 }
 
 .mv-card-accent h3,
@@ -156,3 +156,6 @@
 @media (max-width: 480px) {
   .team-grid { grid-template-columns: 1fr; }
 }
+
+.avatar-primary { background-color: var(--color-primary); }
+.avatar-accent  { background-color: #B85C00; }

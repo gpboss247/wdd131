@@ -6,7 +6,7 @@
 .hero {
   position: relative;
   min-height: 100vh;
-  background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=80');
+  background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=70&fm=webp&auto=compress');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

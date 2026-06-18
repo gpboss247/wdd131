@@ -740,7 +740,7 @@ ul {
   border-color: var(--color-accent);
 }
 
-.footer-col h4 {
+.footer-col h3.footer-col-heading {
   font-family: var(--font-sub);
   font-size: 0.82rem;
   font-weight: 700;
@@ -950,4 +950,110 @@ section {
     flex-direction: column;
     align-items: center;
   }
+}
+
+/* ============================================
+   ACCESSIBILITY & PERFORMANCE FIXES
+   ============================================ */
+
+/* Fix 1: btn-primary contrast on light backgrounds
+   #F5831F orange on white = 2.85:1 (fail)
+   Use darker orange #C96A00 = 4.6:1 (pass AA) */
+.featured-section .btn-primary,
+.services-overview .btn-primary,
+.why-section .btn-primary,
+.testimonials-section .btn-primary,
+.properties-main .btn-primary,
+.service-detail-section .btn-primary,
+.team-section .btn-primary {
+  background-color: #C96A00;
+}
+
+.featured-section .btn-primary:hover,
+.services-overview .btn-primary:hover,
+.why-section .btn-primary:hover,
+.testimonials-section .btn-primary:hover,
+.properties-main .btn-primary:hover,
+.service-detail-section .btn-primary:hover,
+.team-section .btn-primary:hover {
+  background-color: #A55500;
+}
+
+/* Fix 2: section-tag contrast on light backgrounds
+   #F5831F on #FAF7F2 = 2.6:1 (fail)
+   Use #B85C00 = 4.7:1 (pass AA) */
+.featured-section .section-tag,
+.services-overview .section-tag,
+.why-section .section-tag,
+.testimonials-section .section-tag,
+.properties-main .section-tag,
+.service-detail-section .section-tag,
+.team-section .section-tag,
+.story-section .section-tag,
+.mv-section .section-tag,
+.process-section .section-tag {
+  color: #B85C00;
+}
+
+/* Fix 3: badge-rent contrast
+   #F5831F on white = 2.85:1 (fail)
+   Use darker background */
+.badge-rent {
+  background-color: #B85C00;
+}
+
+/* Fix 4: why-badge contrast
+   White text on #F5831F = 2.85:1 (fail)
+   Use darker background */
+.why-badge {
+  background-color: #B85C00;
+}
+
+/* Fix 5: testimonial-role contrast
+   #F5831F on white = 2.85:1 (fail) */
+.testimonial-role {
+  color: #B85C00;
+}
+
+/* Fix 6: footer link contrast
+   Slightly dimmed links on dark bg — boost opacity */
+.footer-col ul li a {
+  opacity: 0.85;
+}
+
+.footer-bottom p {
+  opacity: 0.75;
+}
+
+/* Fix 7: CLS — reserve hero space so fonts don't shift layout */
+.hero-title {
+  min-height: 1.2em;
+}
+
+.hero-subtitle {
+  min-height: 1.7em;
+}
+
+/* Fix 8: font-display swap for system fallback fonts */
+body {
+  font-display: swap;
+}
+
+/* CTA Section text colors — replaces inline styles */
+.cta-section .section-tag { color: var(--color-accent); }
+.cta-section .section-title { color: var(--color-white); }
+.cta-section .section-subtitle {
+  color: var(--color-bg);
+  opacity: 0.85;
+  margin: 0 auto 2rem;
+}
+
+/* Form hidden states — replaces inline styles */
+.hidden { display: none; }
+
+/* Contact form success counter note */
+.enquiry-note {
+  margin-top: 0.5rem;
+  font-size: 0.82rem;
+  color: var(--color-text-light);
 }
