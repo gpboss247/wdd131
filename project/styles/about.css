@@ -52,7 +52,7 @@
 
 .mv-card-accent {
   border-top-color: var(--color-accent);
-  background-color: var(--color-primary);
+  background-color: var(--color-bg-alt);
 }
 
 .mv-card-accent h3,
